@@ -17,7 +17,7 @@ const STORAGE_KEY = 'videoplayer-current-time';
 player.on('timeupdate', throttle(onTimeUpdate, 1000));
 
 // Ввімкнення з часу, яке зберігли
-playOnCurrentTime();
+setCurrentTime();
 
 // Фунція, для запам'ятовування ті зберігання часу відео
 function onTimeUpdate(data) {
